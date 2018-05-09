@@ -1,74 +1,90 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebecca York Hanlon</title>
+<head>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rebecca York Hanlon</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
 
-    <!-- custom CSS-->
-    <!--<link rel="stylesheet" type="text/css" href="./static/normalize.css">-->
-    <link rel="stylesheet" type="text/css" href="static/css/main.css">
-    <link rel="stylesheet" type="text/css" href="static/css/responsive.css">
-  </head>
+	<!-- custom CSS-->
+	<!--<link rel="stylesheet" type="text/css" href="./static/normalize.css">-->
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="static/css/responsive.css">
+</head>
 
-  <body class="container">
-    <header class="site-header" role="banner" aria-label="site-navigation">
-      <img class="logo" src="./static/img/Reb_Denim2.jpg" alt="Logo">
-      <h1 class="site-name">Rebecca York Hanlon</h1>
-      <h3 class="skills">Web Development | Data Analysis</h3>
+<body class="container">
+<header class="site-header" role="banner" aria-label="site-navigation">
+	<img class="logo" src="./static/img/Reb_Denim2.jpg" alt="Logo">
+	<h1 class="site-name">Rebecca York Hanlon</h1>
+	<h3 class="skills">Web Development | Data Analysis</h3>
 
-      <!-- hamburger for aside information -->
-      <nav class="site-navigation" role="navigation">
-        <div id="menu">&#9776;</div>
-      </nav>
+	<!-- hamburger for project information -->
 
-    </header>
+	<a id="menu" class="header-menu"><div>&#9776;</div></a>
+	<nav id="drawer" class="nav site-navigation" role="navigation">
+		<ul class="nav-list">
+			<li class="nav-item"><a href="#">Django Project: Interactive Storybook</a></li>
+			<li class="nav-item"><a href="#">UX Project: Warehouse Online Sales</a></li>
+			<li class="nav-item"><a href="#">Blog: current post</a></li>
+			<li class="nav-item"><a href="#">React Project: TempConVert</a></li>
+			<li class="nav-item"><a href="#">React Project: Ravenous Food App</a></li>
+		</ul>
+	</nav>
 
-    <main class="main-container" role="main">
-      <section class="proj-container project-1" role="region">
-        <img class="img-proj" src="./static/img/projects/cap_stone_djangoStoria-sm.jpg" alt="Example page of interactive storybook">
-        <h3>Storia: An interactive storybook built with Django. With over 16 classes for the database (SQLite) and HTML-templating for the frontend interaction presentation.</h3>
-        <button class="git-button" type="button">To GitHub</button>
-      </section>
+</header>
 
-      <section class="proj-container project-2" role="region">
-        <img class="img-proj" src="./static/img/projects/cap_stone_uxDesign-sm.jpg" alt="Home page of Warehouse U.X. design">
-         <h3>Warehouse: A sample of an UX designed sales website utilizing ...</h3>
-        <button class="git-button" type="button">To GitHub</button>
-      </section>
+<main class="main-container" role="main">
+	<section class="proj-container project-1" role="region">
+		<img class="img-proj" src="./static/img/projects/cap_stone_djangoStoria-sm.jpg"
+			 alt="Example page of interactive storybook">
+		<h3>Storia: An interactive storybook built with Django. With over 16 classes for the database (SQLite) and
+			HTML-templating for the frontend interaction presentation.</h3>
+		<button class="git-button" type="button">To GitHub</button>
+	</section>
 
-      <section class="proj-container blog" role="region">
-        <img class="blog-img" src="static/img/Reb_Denim2.jpg" alt="Logo">
-        <h3>Future Blog</h3>
-        <button class="blog-button" type="button">More posts.</button>
-      </section>
+	<section class="proj-container project-2" role="region">
+		<img class="img-proj" src="./static/img/projects/cap_stone_uxDesign-sm.jpg"
+			 alt="Home page of Warehouse U.X. design">
+		<h3>Warehouse: A sample of an UX designed sales website utilizing ...</h3>
+		<button class="git-button" type="button">To GitHub</button>
+	</section>
 
-      <section class="proj-container project-3" role="region">
-        <img class="img-proj" src="./static/img/projects/react_tempStartPage-sm.jpg" alt="Homepage of interactive app to convert kelvin to fahrenheit and celsius">
-         <h3>TEMPCONVERT: an interactive app built in React.  Converts Kelvin to Fahrenheit and Celsius with a sense of humor.</h3>
-        <button class="git-button" type="button">To GitHub</button>
-      </section>
+	<section class="proj-container blog" role="region">
+		<img class="blog-img" src="static/img/Reb_Denim2.jpg" alt="Logo">
+		<h3>Future Blog</h3>
+		<button class="blog-button" type="button">More posts.</button>
+	</section>
 
-      <section class="proj-container project-4" role="region">
-        <img class="img-proj" src="./static/img/projects/cap_stone_reactRavenous-sm.jpg" alt="Homepage of Ravenous App">
-         <h3>Ravenous: An interactive app built in React. Using the Yelp API.</h3>
-        <button class="git-button" type="button">To GitHub</button>
-      </section>
+	<section class="proj-container project-3" role="region">
+		<img class="img-proj" src="./static/img/projects/react_tempStartPage-sm.jpg"
+			 alt="Homepage of interactive app to convert kelvin to fahrenheit and celsius">
+		<h3>TEMPCONVERT: an interactive app built in React. Converts Kelvin to Fahrenheit and Celsius with a sense of
+			humor.</h3>
+		<button class="git-button" type="button">To GitHub</button>
+	</section>
 
-    </main>
-    <footer class="footer" role="contentinfo">
-      <p class="footer-info">
-        copyright &copy; RYHanlon 2018
-      </p>
-    </footer>
+	<section class="proj-container project-4" role="region">
+		<img class="img-proj" src="./static/img/projects/cap_stone_reactRavenous-sm.jpg" alt="Homepage of Ravenous App">
+		<h3>Ravenous: An interactive app built in React. Using the Yelp API.</h3>
+		<button class="git-button" type="button">To GitHub</button>
+	</section>
 
-    <script src="./static/js/portfolio.js"></script>
+</main>
+<footer class="footer" role="contentinfo">
+	<p class="footer-info">
+		copyright &copy; RYHanlon 2018
+	</p>
+</footer>
 
-  </body>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
+	<script src="./static/js/portfolio.js"></script>
+
+</body>
 </html>

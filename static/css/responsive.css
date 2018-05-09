@@ -1,0 +1,51 @@
+@media screen and (min-width: 767px) {
+    .site-header {
+        grid-template: 30% 55% 15% / 20% 60% 20%;
+        grid-template-areas: "logo name hamburger"
+                             "logo skills hamburger";
+    }
+
+    .site-name {
+        font-size: 2rem;
+    }
+
+    .skills {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1023px) {
+    .site-header {
+        justify-items: start;
+        padding: 20px;
+        grid-template: 65% 35% / 20% 80% ;
+        grid-template-areas: "logo name"
+                             "logo skills";
+    }
+
+    .site-navigation {
+
+    }
+
+    .logo {
+        width: 100px;
+        border-radius: 50%;
+}
+
+    .site-name {
+        justify-self: self-end;
+        /*padding: 0 20px;*/
+        font-size: 3rem;
+    }
+
+    .skills {
+        justify-self: self-end;
+        /*padding: 0 20px;*/
+        font-size: 2rem;
+    }
+    .header-menu {
+        display: none;
+    }
+}

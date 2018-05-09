@@ -1,108 +1,161 @@
 body,
 html {
-  margin: 0;
-  padding: 0;
-  background: url("../img/background1.jpg") fixed;
-  background-size: cover;
+    margin: 0;
+    padding: 0;
+    background: url("../img/background1.jpg") fixed;
+    background-size: cover;
 }
 
 img,
 embed,
 object,
 video {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .container {
-  display: grid;
-  position: relative;
-  grid-template: 10% repeat(5, 16%) 10% / 1fr;
-  grid-template-areas: "header"
-                       "project-1"
-                       "project-2"
-                       "blog"
-                       "project-3"
-                       "project-4"
-                       "footer";
+    display: grid;
+    position: relative;
+    grid-template: 10% repeat(5, 16%) 10% / 1fr;
+    grid-template-areas: "header"
+                         "project-1"
+                         "project-2"
+                         "blog"
+                         "project-3"
+                         "project-4"
+                         "footer";
 }
 
 
 /* Header */
 .site-header {
-  background-color: rgba(54, 49, 39, .9);
-  padding: 10px;
-  grid-area: header;
-  justify-items: center;
-  display: grid;
-  grid-template: 30% 55% 15% / 20% 60% 20%;
-  grid-template-areas: "logo . hamburger"
-                       "name name name"
-                       "skills skills skills";
+    background-color: rgba(54, 49, 39, .9);
+    padding: 10px;
+    grid-area: header;
+    justify-items: center;
+    display: grid;
+    grid-template: 50% 50% / 20% 60% 20%;
+    grid-template-areas: "logo name hamburger"
+                         "logo skills hamburger";
 }
 
 .logo {
-  width: 60px;
-  border-radius: 50%;
-  grid-area: logo;
+    width: 60px;
+    border-radius: 50%;
+    grid-area: logo;
 }
 
 .site-navigation {
-  grid-area: hamburger;
-  color: #CFC9BD;
+    grid-area: hamburger;
+    color: #CFC9BD;
 }
 
 #menu {
-  font-size: 3rem;
+    font-size: 3rem;
 }
+
 .site-name {
-  grid-area: name;
-  justify-self: center;
-  margin-bottom: 0;
-  color: #CFC9BD;
+    grid-area: name;
+    justify-self: center;
+    margin-bottom: 0;
+    color: #CFC9BD;
+    font-size: 1.2rem;
 }
 
 .skills {
-  grid-area: skills;
-  justify-self: center;
-  margin: 5px;
-  color: #CFC9BD;
+    grid-area: skills;
+    justify-self: center;
+    margin: 5px;
+    color: #CFC9BD;
+    font-size: .8rem;
 }
+
+/* Hamburger navigation */
+.header-menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1rem;
+}
+
+.nav {
+    z-index: 10;
+    background-color: rgba(54, 49, 39, 1);
+    width: 100vw;
+    position: absolute;
+    /* Transform moves the drawer off canvas. */
+    transform: translate(0, -450px);
+    /* Animate the drawer */
+    transition: transform 0.3s ease;
+}
+
+.nav-list {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    box-sizing: border-box;
+    display: list-item;
+    border-bottom: 1px solid white;
+    width: 100%;
+    text-align: left;
+    line-height: 1rem;
+    padding: 24px;
+    font-size: 1.3rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #CFC9BD;
+    padding: 1.5rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: green;
+}
+
+.nav.open {
+    transform: translate(0, 0);
+}
+
 
 /* Content */
 .proj-container {
-  border: 1px solid rgba(54, 49, 39, .8);
-  background-color: rgba(54, 49, 39, .8);
-  margin: 8%;
+    border: 1px solid rgba(54, 49, 39, .8);
+    background-color: rgba(54, 49, 39, .8);
+    margin: 8%;
 }
 
 .project-1 {
-  grid-area: project-1;
+    grid-area: project-1;
 }
 
 .project-2 {
-  grid-area: project-2;
+    grid-area: project-2;
 }
 
 .blog-img {
-  width: 10vw;
-  border-radius: 50%;
+    width: 10vw;
+    border-radius: 50%;
 }
 
 .blog {
-  grid-area: blog;
+    grid-area: blog;
 }
 
 .project-3 {
-  grid-area: project-3;
+    grid-area: project-3;
 }
 
 .project-4 {
-  grid-area: project-4;
+    grid-area: project-4;
 }
-
 
 /* Footer */
 .footer {
-  grid-area: footer;
-  background-color: rgba(54, 49, 39, .9);
+    grid-area: footer;
+    background-color: rgba(54, 49, 39, .9);
 }
