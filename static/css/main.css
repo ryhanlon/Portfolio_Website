@@ -1,0 +1,64 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rebeccapurple;
+}
+
+img,
+embed,
+object,
+video {
+  max-width: 100%;
+}
+
+
+/* Header */
+.site-header {
+  border: 1px solid orangered;
+  background-color: orange;
+}
+
+.logo {
+  width: 15vw;
+  border-radius: 50%;
+}
+
+
+/* Content */
+
+.container {
+
+}
+
+.proj-container {
+  border: 1px solid seagreen;
+  background-color: darkslategrey;
+  margin: 10px;
+}
+
+.project-1 {
+
+}
+
+.project-2 {
+
+}
+
+.blog {
+
+}
+
+.project-3 {
+
+}
+
+.project-4 {
+
+}
+
+
+/* Footer */
+.footer {
+  background-color: orange;
+}
