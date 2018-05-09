@@ -11,6 +11,7 @@
 
 # design files, Ps, XD, Ai, ToonBoom
 /design
+/rejects
 
 # misc
 .DS_Store

@@ -2,7 +2,8 @@ body,
 html {
   margin: 0;
   padding: 0;
-  background-color: rebeccapurple;
+  background: url("../img/background1.jpg") fixed;
+  background-size: cover;
 }
 
 img,
@@ -12,53 +13,96 @@ video {
   max-width: 100%;
 }
 
+.container {
+  display: grid;
+  position: relative;
+  grid-template: 10% repeat(5, 16%) 10% / 1fr;
+  grid-template-areas: "header"
+                       "project-1"
+                       "project-2"
+                       "blog"
+                       "project-3"
+                       "project-4"
+                       "footer";
+}
+
 
 /* Header */
 .site-header {
-  border: 1px solid orangered;
-  background-color: orange;
+  background-color: rgba(54, 49, 39, .9);
+  padding: 10px;
+  grid-area: header;
+  justify-items: center;
+  display: grid;
+  grid-template: 30% 55% 15% / 20% 60% 20%;
+  grid-template-areas: "logo . hamburger"
+                       "name name name"
+                       "skills skills skills";
 }
 
 .logo {
-  width: 15vw;
+  width: 60px;
   border-radius: 50%;
+  grid-area: logo;
 }
 
+.site-navigation {
+  grid-area: hamburger;
+  color: #CFC9BD;
+}
+
+#menu {
+  font-size: 3rem;
+}
+.site-name {
+  grid-area: name;
+  justify-self: center;
+  margin-bottom: 0;
+  color: #CFC9BD;
+}
+
+.skills {
+  grid-area: skills;
+  justify-self: center;
+  margin: 5px;
+  color: #CFC9BD;
+}
 
 /* Content */
-
-.container {
-
-}
-
 .proj-container {
-  border: 1px solid seagreen;
-  background-color: darkslategrey;
-  margin: 10px;
+  border: 1px solid rgba(54, 49, 39, .8);
+  background-color: rgba(54, 49, 39, .8);
+  margin: 8%;
 }
 
 .project-1 {
-
+  grid-area: project-1;
 }
 
 .project-2 {
+  grid-area: project-2;
+}
 
+.blog-img {
+  width: 10vw;
+  border-radius: 50%;
 }
 
 .blog {
-
+  grid-area: blog;
 }
 
 .project-3 {
-
+  grid-area: project-3;
 }
 
 .project-4 {
-
+  grid-area: project-4;
 }
 
 
 /* Footer */
 .footer {
-  background-color: orange;
+  grid-area: footer;
+  background-color: rgba(54, 49, 39, .9);
 }
