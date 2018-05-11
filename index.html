@@ -24,8 +24,11 @@
 	<h3 class="skills">Web Development | Data Analysis</h3>
 
 	<!-- hamburger for project information -->
-
-	<a id="menu" class="header-menu"><div>&#9776;</div></a>
+	<a id="menu" class="header-menu"><div class="menu-container" onclick="menuClick(this)">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div></a>
 	<nav id="drawer" class="nav site-navigation" role="navigation">
 		<ul class="nav-list">
 			<li class="nav-item"><a href="#">Django Project: Interactive Storybook</a></li>
@@ -55,9 +58,9 @@
 		<button class="button git-button" type="button">To GitHub</button>
 	</section>
 
-	<section class="proj-container blog" role="region">
+	<section class="blog-container blog" role="region">
 		<img class="blog-img" src="static/img/Reb_Denim2.jpg" alt="Logo">
-		<h2 class="proj-heading">Future Blog</h2><h3 class="proj-highlight">Code Challenge: Palindrome</h3><p class="proj-text">Let's start with Python...</p>
+		<h2 class="proj-heading">Blog</h2><h3 class="proj-highlight">Code Challenge: Palindrome</h3><p class="proj-text">Let's start with Python...</p>
 		<button class="button blog-button" type="button">More posts.</button>
 	</section>
 

@@ -30,6 +30,7 @@ video {
 
 /* Header */
 .site-header {
+    z-index: 7;
     background-color: rgba(54, 49, 39, .9);
     padding: 10px;
     grid-area: header;
@@ -44,6 +45,8 @@ video {
     width: 60px;
     border-radius: 50%;
     grid-area: logo;
+    border: 2px solid rgba(207, 201, 189, 0.5);
+    box-shadow: 2px 3px 11px rgba(3, 2, 0, 0.64);
 }
 
 .site-navigation {
@@ -52,13 +55,55 @@ video {
 }
 
 #menu {
-    font-size: 3rem;
+    font-size: 2.4rem;
+}
+
+.menu-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* make bars */
+.bar1,
+.bar2,
+.bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #CFC9BD;
+    box-shadow: 2px 1px 11px rgba(3, 2, 0, 0.64);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* animate bars to X */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.hamburger:hover {
+    background-color: rgba(233, 211, 95, .5);
+}
+
+.hamburger:active {
+    background-color: rgba(106, 118, 131, .5);
+    color: #fff;
+    box-shadow: none;
 }
 
 .site-name {
     grid-area: name;
     justify-self: center;
-    margin-bottom: 0;
+    /*margin-bottom: 0;*/
     color: #CFC9BD;
     font-size: 1.2rem;
 }
@@ -66,7 +111,7 @@ video {
 .skills {
     grid-area: skills;
     justify-self: center;
-    margin: 5px;
+    /*margin: 5px;*/
     color: #CFC9BD;
     font-size: .8rem;
 }
@@ -80,10 +125,11 @@ video {
 }
 
 .nav {
-    z-index: 10;
+    /*z-index: 3;*/
     background-color: rgba(54, 49, 39, 1);
-    width: 100vw;
+    width: 84vw;
     position: absolute;
+    border: 1px solid #CFC9BD;
     /* Transform moves the drawer off canvas. */
     transform: translate(0, -450px);
     /* Animate the drawer */
@@ -138,6 +184,19 @@ video {
     padding: 15px;
 }
 
+.blog-container {
+    border: 1px solid rgba(54, 49, 39, .8);
+    background-color: rgba(54, 49, 39, .8);
+    margin: 6%;
+    display: grid;
+    grid-template: 41% 13% 13% 13% / 50% 50%;
+    grid-template-areas: "image title"
+                         "highlight highlight"
+                         "text text"
+                         "button button";
+    padding: 15px;
+}
+
 .project-1 {
     grid-area: project-1;
     /*padding: 10px;*/
@@ -146,19 +205,25 @@ video {
 .proj-img {
     grid-area: image;
     justify-self: center;
+    border: 4px inset rgba(207, 201, 189, 0.5);
+    box-shadow: 2px 3px 11px rgba(3, 2, 0, 0.64);
 
 }
 
 .proj-heading {
     grid-area: title;
+    justify-self: center;
+    text-transform: uppercase;
 }
 
 .proj-highlight {
     grid-area: highlight;
+    justify-self: left;
 }
 
 .proj-text {
     grid-area: text;
+    justify-self: left;
 }
 
 .button {
@@ -182,6 +247,7 @@ video {
 .button:active {
     background-color: rgba(106, 118, 131, .5);
     color: #fff;
+    box-shadow: none;
 }
 
 .project-2 {
@@ -189,8 +255,11 @@ video {
 }
 
 .blog-img {
-    width: 10vw;
+    width: 25vw;
     border-radius: 50%;
+    border: 2px solid rgba(207, 201, 189, 0.5);
+    box-shadow: 2px 3px 11px rgba(3, 2, 0, 0.64);
+
 }
 
 .blog {
