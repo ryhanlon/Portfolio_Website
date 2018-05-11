@@ -1,3 +1,4 @@
+/* media-query for iPad (768 x 1024) */
 @media screen and (min-width: 767px) {
     .site-header {
         grid-template: 30% 55% 15% / 20% 60% 20%;
@@ -35,6 +36,10 @@
                              ". button";
     }
 
+    .proj-img {
+        /*margin: inherit;*/
+    }
+
     .proj-heading {
         margin-bottom: 0;
     }
@@ -42,20 +47,30 @@
     .proj-highlight {
         justify-self: left;
         padding: 0  1.2rem;
-}
+    }
 
     .proj-text {
         justify-self: left;
         padding: 0  1.2rem;
     }
+
     .blog-button {
         justify-self: center;
     }
-
 }
 
-
+/* media-query for iPad Pro (1024 x 1366)*/
 @media screen and (min-width: 1023px) {
+    .main-container {
+        grid-template: 10% repeat(4, 16%) 10% / 60% 40%;
+        grid-template-areas: "header header"
+                             "project-1 blog-move"
+                             "project-2 blog-move"
+                             "project-3 project-list"
+                             "project-4 ."
+                             "footer footer";
+    }
+
     .site-header {
         justify-items: start;
         padding: 20px;
@@ -64,14 +79,23 @@
                              "logo skills";
     }
 
-    .site-navigation {
-
+    .blog-container {
+        border: 1px solid rgba(54, 49, 39, .8);
+        background-color: rgba(54, 49, 39, .8);
+        margin: 9% 6%;
+        display: grid;
+        grid-template: 41% 13% 13% 13% / 50% 50%;
+        grid-template-areas: "image title"
+                             "highlight highlight"
+                             "text text"
+                             "button button";
+        padding: 15px;
     }
 
     .logo {
         width: 100px;
         border-radius: 50%;
-}
+    }
 
     .site-name {
         justify-self: self-end;
@@ -84,13 +108,25 @@
         /*padding: 0 20px;*/
         font-size: 2rem;
     }
+
     .header-menu {
         display: none;
     }
-}
 
-@media screen and (min-width: 1200px) {
-    body {
-        padding: 10%;
+    .topic-container {
+        grid-area: project-list;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        border: 1px solid rgba(54, 49, 39, .8);
+        background-color: rgba(54, 49, 39, .8);
+        margin: 6%;
+        padding: 15px;
     }
+
+    .topic-instructions {
+        padding: 10px 38px 0;
+        margin: 0;
+    }
+
 }

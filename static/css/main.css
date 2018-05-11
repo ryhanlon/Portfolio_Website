@@ -14,16 +14,16 @@ video {
     max-width: 100%;
 }
 
-.container {
+.main-container {
     display: grid;
     position: relative;
     grid-template: 10% repeat(5, 16%) 10% / 1fr;
     grid-template-areas: "header"
-                         "project-1"
                          "project-2"
-                         "blog"
+                         "project-1"
                          "project-3"
                          "project-4"
+                         "blog-move"
                          "footer";
 }
 
@@ -51,10 +51,11 @@ video {
 .site-navigation {
     grid-area: hamburger;
     /*color: #CFC9BD;*/
+    font-size: 2.4rem;
 }
 
 #menu {
-    font-size: 2.4rem;
+
 }
 
 .menu-container {
@@ -124,13 +125,13 @@ video {
 }
 
 .nav {
-    /*z-index: 3;*/
+    z-index: 10;
     background-color: rgba(54, 49, 39, 1);
     width: 84vw;
     position: absolute;
     border: 1px solid #CFC9BD;
     /* Transform moves the drawer off canvas. */
-    transform: translate(0, -450px);
+    transform: translate(0, -470px);
     /* Animate the drawer */
     transition: transform 0.3s ease;
 }
@@ -197,6 +198,10 @@ video {
     padding: 15px;
 }
 
+.blog {
+    grid-area: blog-move;
+}
+
 .project-1 {
     grid-area: project-1;
     /*padding: 10px;*/
@@ -207,7 +212,6 @@ video {
     justify-self: center;
     border: 4px inset rgba(207, 201, 189, 0.5);
     box-shadow: 2px 3px 11px rgba(3, 2, 0, 0.64);
-
 }
 
 .proj-heading {
@@ -265,10 +269,6 @@ video {
 
 }
 
-.blog {
-    grid-area: blog;
-}
-
 .project-3 {
     grid-area: project-3;
 }
@@ -278,6 +278,25 @@ video {
 }
 .project-4 {
     grid-area: project-4;
+}
+
+.topic-container {
+    display: none;
+}
+
+.topics {
+   list-style-type: none;
+
+}
+
+.topic-item {
+    line-height: 2.2;
+    font-size: 1.2rem;
+}
+
+.topic-item a {
+    text-decoration: none;
+    color: #CFC9BD;
 }
 
 
