@@ -13,6 +13,45 @@
         font-size: 1.2rem;
     }
 
+    .nav-item {
+        line-height: 1rem;
+        padding: 24px;
+        font-size: 1.3rem;
+    }
+
+    .proj-container {
+    grid-template: 25% 25% 25% 25% / 50% 50%;
+    grid-template-areas: "image title"
+                         "image highlight"
+                         "image text"
+                         "button text";
+    }
+
+    .blog-container {
+        grid-template: repeat(4, 25%) / 50% 50%;
+        grid-template-areas: "image title"
+                             "image highlight"
+                             "image text"
+                             ". button";
+    }
+
+    .proj-heading {
+        margin-bottom: 0;
+    }
+
+    .proj-highlight {
+        justify-self: left;
+        padding: 0  1.2rem;
+}
+
+    .proj-text {
+        justify-self: left;
+        padding: 0  1.2rem;
+    }
+    .blog-button {
+        justify-self: center;
+    }
+
 }
 
 
@@ -47,5 +86,11 @@
     }
     .header-menu {
         display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        padding: 10%;
     }
 }

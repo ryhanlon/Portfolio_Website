@@ -30,7 +30,6 @@ video {
 
 /* Header */
 .site-header {
-    z-index: 7;
     background-color: rgba(54, 49, 39, .9);
     padding: 10px;
     grid-area: header;
@@ -103,7 +102,7 @@ video {
 .site-name {
     grid-area: name;
     justify-self: center;
-    /*margin-bottom: 0;*/
+    margin-bottom: 0;
     color: #CFC9BD;
     font-size: 1.2rem;
 }
@@ -111,7 +110,7 @@ video {
 .skills {
     grid-area: skills;
     justify-self: center;
-    /*margin: 5px;*/
+    margin: 3px;
     color: #CFC9BD;
     font-size: .8rem;
 }
@@ -156,7 +155,8 @@ video {
 .nav a {
     text-decoration: none;
     color: #CFC9BD;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
+    line-height: 1.2;
 }
 
 .nav a:hover {
@@ -219,6 +219,7 @@ video {
 .proj-highlight {
     grid-area: highlight;
     justify-self: left;
+    text-align: center;
 }
 
 .proj-text {
@@ -232,7 +233,7 @@ video {
     border-radius: 20px;
     justify-self: center;
     background-color: rgba(207, 201, 189, 1);
-    box-shadow: 2px 3px 11px rgba(3, 2, 0, 0.72);
+    box-shadow: 2px 2px 11px rgba(3, 2, 0, 0.72);
     font-size: 1.5rem;
     color: rgba(0, 0, 0, .8);
     margin: 10px;
@@ -255,6 +256,8 @@ video {
 }
 
 .blog-img {
+    grid-area: image;
+    justify-self: center;
     width: 25vw;
     border-radius: 50%;
     border: 2px solid rgba(207, 201, 189, 0.5);
@@ -282,4 +285,10 @@ video {
 .footer {
     grid-area: footer;
     background-color: rgba(54, 49, 39, .9);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info {
+
 }
