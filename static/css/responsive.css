@@ -25,19 +25,19 @@
     }
 
     .proj-container {
-    grid-template: 25% 25% 25% 25% / 50% 50%;
+    grid-template: 35% 25% 25% 15% / 50% 50%;
     grid-template-areas: "image title"
                          "image highlight"
-                         "image text"
-                         "button text";
+                         "text text"
+                         "button button";
     }
 
     .blog-container {
-        grid-template: repeat(4, 25%) / 50% 50%;
+        grid-template: 30% 20% 35% 15% / 50% 50%;
         grid-template-areas: "image title"
                              "image highlight"
-                             "image text"
-                             "button text";
+                             "text text"
+                             "button button";
     }
 
     .proj-heading {
@@ -54,6 +54,16 @@
         padding: 0  1.2rem;
     }
 
+    .button {
+        justify-self: center;
+        margin: 1.2rem;
+        padding: 10px 45px;
+    }
+
+    .blog-img {
+        margin: 2.2vw;
+    }
+
     .blog-heading {
         margin-bottom: 0;
     }
@@ -68,13 +78,8 @@
         padding: 0  1.2rem;
     }
 
-    .button {
-        justify-self: stretch;
-        margin: 20px 0 7px;
-    }
-
     .blog-button {
-        padding: 0;
+        margin-bottom: 1rem;
     }
 
     .header-menu {
@@ -85,11 +90,12 @@
 /* media-query for iPad Pro (1024 x 1366)*/
 @media screen and (min-width: 1023px) {
     .main-container {
-        grid-template: 10% repeat(4, 16%) 10% / 60% 40%;
+        grid-template: 10% repeat(5, 16%) 10% / 60% 40%;
         grid-template-areas: "header header"
                              "project-1 blog-move"
                              "project-2 blog-move"
-                             "project-3 project-list"
+                             "project-5 project-list"
+                             "project-3 ."
                              "project-4 ."
                              "footer footer";
     }
@@ -107,12 +113,13 @@
         background-color: rgba(54, 49, 39, .8);
         margin: 9% 6%;
         display: grid;
-        grid-template: 30% 20% 35% 15% / 50% 50%;
+        grid-template: 30% 20% 30% 20% / 55% 45%;
         grid-template-areas: "image title"
                              "highlight highlight"
                              "text text"
                              "button button";
-        padding: 15px;
+        height: 70%;
+        align-self: center;
     }
 
     .logo {
@@ -134,6 +141,23 @@
         margin: 0 10px;
     }
 
+    .blog-button {
+        margin: 2.3rem;
+    }
+
+    .blog-heading {
+        font-size: 3rem;
+        margin: 3.4rem 0;
+    }
+
+    .blog-highlight {
+        align-self: end;
+    }
+
+    .blog-text {
+        padding: 0 1.2rem;
+    }
+
     .header-menu {
         display: none;
     }
@@ -142,16 +166,19 @@
         grid-area: project-list;
         display: flex;
         flex-direction: column;
+        height: 70%;
         justify-content: start;
         border: 1px solid rgba(54, 49, 39, .8);
         background-color: rgba(54, 49, 39, .8);
         margin: 6%;
-        padding: 15px;
+        padding: 10px 0 10px 10px;
+        align-self: center;
     }
 
     .topic-instructions {
-        padding: 10px 38px 0;
+        padding: 10px 10px 0;
         margin: 0;
+        text-align: center;
     }
 
 }

@@ -11,7 +11,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background: url("../img/background1.jpg") fixed;
+    background: url("../img/background-1800px.jpg") fixed;
     background-size: cover;
     color: #CFC9BD;
     font-family: 'Lato', sans-serif;
@@ -31,11 +31,12 @@ video {
 .main-container {
     display: grid;
     position: relative;
-    grid-template: 10% repeat(5, 16%) 10% / 1fr;
+    grid-template: 10% repeat(6, 13%) 10% / 1fr;
     grid-template-areas: "header"
                          "project-1"
                          "project-2"
                          "blog-move"
+                         "project-5"
                          "project-3"
                          "project-4"
                          "footer";
@@ -205,7 +206,6 @@ video {
                          "button";
     padding: 15px;
     font-family: 'Alegreya', serif;
-
 }
 
 .project-1 {
@@ -223,6 +223,10 @@ video {
 
 .project-4 {
     grid-area: project-4;
+}
+
+.project-5 {
+    grid-area: project-5;
 }
 
 .proj-img {
@@ -248,6 +252,8 @@ video {
 .proj-text {
     grid-area: text;
     justify-self: left;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 .button {
@@ -257,11 +263,12 @@ video {
     justify-self: center;
     background-color: rgba(207, 201, 189, 1);
     box-shadow: 2px 2px 11px rgba(3, 2, 0, 0.72);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: rgba(0, 0, 0, .8);
     margin: 10px;
     padding: 8px 15px;
     outline: none;
+    transition: background-color .3s;
 }
 
 .button:hover {
@@ -317,20 +324,29 @@ video {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 2rem;
+    margin: 1.4rem;
 }
 
 .blog-highlight {
     grid-area: highlight;
     justify-self: center;
     text-align: center;
-        font-family: 'Indie Flower', cursive;
-    letter-spacing: 2px;
-    font-size: 1.2rem;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
 }
 
 .blog-text {
     grid-area: text;
     justify-self: left;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.code-highlight {
+    background-color: rgba(3, 2, 0, 0.47);
+    border-radius: 5px;
+    padding: 2px;
 }
 
 /*--------------------------
@@ -343,11 +359,11 @@ video {
 
 .topics {
    list-style-type: none;
-
+   padding: 5px;
 }
 
 .topic-item {
-    line-height: 2.2;
+    line-height: 2.7;
     font-size: 1.2rem;
 }
 
