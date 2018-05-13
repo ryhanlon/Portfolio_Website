@@ -11,7 +11,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    background: url("../img/background-1800px.jpg") fixed;
+    background: url("../img/background-800px.jpg") fixed;
     background-size: cover;
     color: #CFC9BD;
     font-family: 'Lato', sans-serif;
@@ -188,7 +188,7 @@ video {
 
 .nav a:hover {
     text-decoration: underline;
-    color: green;
+    color: #CFC9BD;
 }
 
 .nav.open {
@@ -381,10 +381,23 @@ video {
 }
 
 .topic-item a {
-    text-decoration: none;
     color: #CFC9BD;
 }
 
+.topic-item a:hover {
+    background-color: rgb(76, 98, 122);
+    box-shadow: 2px 2px 5px rgba(3, 2, 0, 0.64);
+    border-radius: 20px;
+    padding: 8px 15px;
+    text-decoration: underline;
+    color: rgb(232, 228, 221);
+}
+
+.topic-item a:active {
+    background-color: rgba(106, 118, 131, .5);
+    color: rgb(224, 160, 116);
+    box-shadow: none;
+}
 
 /*--------------------------
            Footer
