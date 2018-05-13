@@ -55,7 +55,7 @@
     }
 
     .button {
-        justify-self: center;
+        /*justify-self: center;*/
         margin: 1.2rem;
         padding: 10px 45px;
     }
@@ -125,6 +125,8 @@
     .logo {
         width: 100px;
         border-radius: 50%;
+        /*background-color: rgba(33, 150, 243, 0.70);*/
+        background-color: rgba(97, 126, 158, 1);
     }
 
     .site-name {
@@ -141,8 +143,9 @@
         margin: 0 10px;
     }
 
+    a,
     .blog-button {
-        margin: 2.3rem;
+        margin: auto;
     }
 
     .blog-heading {
@@ -155,7 +158,7 @@
     }
 
     .blog-text {
-        padding: 0 1.2rem;
+        padding: 0 .2rem;
     }
 
     .header-menu {

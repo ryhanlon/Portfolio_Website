@@ -25,7 +25,10 @@ video {
 }
 
  a {
+    grid-area: button;
     text-decoration: none;
+    justify-self: center;
+    cursor: pointer;
 }
 
 .main-container {
@@ -56,6 +59,7 @@ video {
     grid-template: 50% 50% / 20% 60% 20%;
     grid-template-areas: "logo name hamburger"
                          "logo skills hamburger";
+    box-shadow: 1px 1px 3px rgba(3, 2, 0, 0.64);
 }
 
 .logo {
@@ -65,6 +69,8 @@ video {
     border: 1px solid rgba(207, 201, 189, 0.5);
     box-shadow: 2px 3px 11px rgba(3, 2, 0, 0.64);
     padding: .2rem;
+    background-color: rgba(97, 126, 158, 1);
+
 }
 
 .site-navigation {
@@ -206,6 +212,8 @@ video {
                          "button";
     padding: 15px;
     font-family: 'Alegreya', serif;
+    box-shadow: 2px 2px 5px rgba(3, 2, 0, 0.64);
+
 }
 
 .project-1 {
@@ -241,6 +249,7 @@ video {
     justify-self: center;
     font-family: 'Lato', sans-serif;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .proj-highlight {
@@ -261,23 +270,26 @@ video {
     border: 1px solid black;
     border-radius: 20px;
     justify-self: center;
-    background-color: rgba(207, 201, 189, 1);
+    background-color: rgba(97, 126, 158, 1);
     box-shadow: 2px 2px 11px rgba(3, 2, 0, 0.72);
     font-size: 1.2rem;
-    color: rgba(0, 0, 0, .8);
-    margin: 10px;
+    color: rgb(232, 228, 221);
+    margin: 10px 0;
     padding: 8px 15px;
     outline: none;
     transition: background-color .3s;
+    cursor: pointer;
 }
 
 .button:hover {
-    background-color: rgba(233, 211, 95, .5);
+    background-color: rgb(144, 187, 232);
+    text-decoration: underline;
+    color: rgb(79, 77, 72);
 }
 
 .button:active {
     background-color: rgba(106, 118, 131, .5);
-    color: #fff;
+    color: rgb(224, 160, 116);
     box-shadow: none;
 }
 
@@ -300,6 +312,8 @@ video {
                          "button button";
     padding: 15px;
     font-family: 'Lato', sans-serif;
+    box-shadow: 2px 2px 5px rgba(3, 2, 0, 0.64);
+
 
 }
 
@@ -314,7 +328,6 @@ video {
     border-radius: 50%;
     border: 2px solid rgba(207, 201, 189, 0.5);
     box-shadow: 2px 3px 11px rgba(3, 2, 0, 0.64);
-
 }
 
 .blog-heading {
@@ -344,7 +357,7 @@ video {
 }
 
 .code-highlight {
-    background-color: rgba(3, 2, 0, 0.47);
+    background-color: rgba(204, 159, 201, .5);
     border-radius: 5px;
     padding: 2px;
 }
