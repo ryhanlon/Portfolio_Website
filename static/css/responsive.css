@@ -1,4 +1,5 @@
-/* media-query for iPad (768 x 1024) */
+/*---- media-query for iPad (768 x 1024) ----*/
+
 @media screen and (min-width: 767px) {
 
     body,
@@ -93,7 +94,9 @@
     }
 }
 
-/* media-query for iPad Pro (1024 x 1366)*/
+
+/*---- media-query for iPad Pro (1024 x 1366) ----*/
+
 @media screen and (min-width: 1023px) {
 
     body,
@@ -195,7 +198,6 @@
         margin: 0;
         text-align: center;
     }
-
 }
 
 @media screen and (min-width: 1400px) {

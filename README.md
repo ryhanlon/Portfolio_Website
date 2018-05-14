@@ -8,6 +8,8 @@
 
 This website is built to feature projects that I have developed over the past year.  It showcases each project with a brief introduction and a direct link to GitHub for further code details.
 
+Click [here](#pictures-of-desponsive-design-of-website) to see pictures of the website's Responsive Design.
+
 ##### Technical Components
 - CSS Grid, Flexbox and Media Queries are used to build the _responsive features_
 - `scrset` html attribute is used for image optimizations
@@ -35,3 +37,21 @@ I also went to [MDN web docs]("https://developer.mozilla.org/en-US/docs/Web/CSS/
 - `-webkit-transform` is an unknown vendor extension -- It seems that this error will show because the validator doesn't recognize it, but it can still be used.
 
 - I ignored the `background-color` error since it didn't make sense to me.
+
+#### Pictures of Responsive Design of Website
+##### Phone
+
+![](./docs/img/mobile_200px.png)
+
+##### iPad
+![](./docs/img/ipad_400px.png)
+
+##### iPad with Open Drawer
+![](./docs/img/ipad-drawer_400px.png)
+
+##### Desk Top
+![](./docs/img/deskTop_400px.png)
+
+
+
+

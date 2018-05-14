@@ -4,7 +4,7 @@
 <head>
 	<!-- Meta -->
 	<meta charset="utf-8">
-	<!-- removed chrome=1 due to error-->
+	<!-- removed chrome=1 due to error HTML Validator -->
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rebecca York Hanlon</title>
@@ -14,10 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Alegreya:400,400i,700,700i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 
-	<!--<link href="https://fonts.googleapis.com/css?family=Exo+2:400,400i,700,700i" rel="stylesheet">-->
-
 	<!-- custom CSS-->
-	<!--<link rel="stylesheet" type="text/css" href="./static/normalize.css">-->
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
 	<link rel="stylesheet" type="text/css" href="static/css/responsive.css">
 
@@ -26,7 +23,6 @@
 </head>
 
 <body class="container">
-
 <header class="site-header" aria-label="site-navigation">
 	<img class="logo" src="./static/img/BH_logo_200px.png"
 					  srcset="./static/img/BH_logo_200px.png 1x,
@@ -42,11 +38,13 @@
 		<div class="bar2"></div>
 		<div class="bar3"></div>
 	</div></a>
+
 	<nav id="drawer" class="nav site-navigation">
 		<ul class="nav-list">
 			<li class="nav-item"><a href="https://github.com/ryhanlon/Capstone_PDXCodeGuild" target="_blank">Django Project: Interactive Storybook</a></li>
 			<li class="nav-item"><a href="https://github.com/ryhanlon/Website-UIs/tree/master/capstone_wareHouse" target="_blank">UX Project: Warehouse Online Sales</a></li>
 			<li class="nav-item"><a href="#">Blog: current post</a></li>
+			<li class="nav-item"><a href="https://github.com/ryhanlon/Data_Analysis_Projects/tree/master" target="_blank">Data Analysis: Gun Deaths in the US</a></li>
 			<li class="nav-item"><a href="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/tempconverter" target="_blank">React Project: TempConVert</a></li>
 			<li class="nav-item"><a href="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/proRavenous-1/ravenous_1" target="_blank">React Project: Ravenous Food App</a></li>
 		</ul>
@@ -54,8 +52,8 @@
 
 </header>
 
+<!-- Project Info and links -->
 <main class="main-container">
-
 	<section class="proj-container project-1">
 		<img class="proj-img" src="./static/img/projects/cap_stone_djangoStoria-800px.jpg"
 							  srcset="./static/img/projects/cap_stone_djangoStoria-800px.jpg 1x,
@@ -64,15 +62,10 @@
 			                  alt="Example page of interactive storybook">
 
 		<h2 class="proj-heading">Storia</h2><h3 class="proj-highlight"> An Interactive Storybook <br> Built with Django</h3><p class="proj-text">Web App for children to learn how to read with interactive storybooks.  It turns plain stories into interactive stories with an analyses of the child's progress.  Over 16 classes created to build the database (SQLite) and
-			HTML-Templating for the Front-end interactive presentation. Uses a REST Framework to capture user actions and store in the databse.</p>
-
-		<!-- NOTE to reviewer: changed to form due to validation error, went online to figure out problem.  Originally put a tag around button. -->
+			HTML-Templating for the Front-end interactive presentation. Uses a REST Framework to capture user actions then store them in the database.</p>
 		<form style="display: inline" action="https://github.com/ryhanlon/Capstone_PDXCodeGuild" method="get">
-		<!--<a href="https://github.com/ryhanlon/Capstone_PDXCodeGuild" target="_blank">-->
-
 			<button class="button button git-button" type="button">GitHub</button>
-		<!--</a>-->
-			</form>
+		</form>
 	</section>
 
 	<section class="proj-container project-2">
@@ -81,8 +74,10 @@
 									  ./static/img/projects/cap_stone_uxDesign-1000px.jpg 2x,
 									  ./static/img/projects/cap_stone_uxDesign-1500px.jpg 3x"
 			                  alt="Home page of Warehouse U.X. design">
-		<h2 class="proj-heading">Warehouse</h2><h3 class="proj-highlight">A Sample of a <br>UX-Designed Website</h3><p class="proj-text">Used Reviewed User Story Templates to devolop a plan to update the website.  Responsiveness was add by using Media Queries, Semantic HTML, CSS Grid and Flexbox. For a better Screen Reader experience, added alt tags for images, aria-role attributes, aria-labels and aria-labelled-by. </p>
-		<form style="display: inline" action="https://github.com/ryhanlon/Website-UIs/tree/master/capstone_wareHouse" method="get"><button class="button git-button" type="button">GitHub</button></form>
+		<h2 class="proj-heading">Warehouse</h2><h3 class="proj-highlight">A Sample of a <br>UX-Designed Website</h3><p class="proj-text">I studied "User Story Templates" to devolop a plan to update the website.  Responsive design was added by using Media Queries, Semantic HTML, CSS Grid and Flexbox. For a better Screen Reader experience, added alt tags for images, aria-role attributes, aria-labels and aria-labelled-by. </p>
+		<form style="display: inline" action="https://github.com/ryhanlon/Website-UIs/tree/master/capstone_wareHouse" method="get">
+			<button class="button git-button" type="button">GitHub</button>
+		</form>
 	</section>
 
 	<section class="proj-container project-3">
@@ -91,8 +86,10 @@
 									  ./static/img/projects/react_tempStartPage-1000px.jpg 2x,
 									  ./static/img/projects/react_tempStartPage-1500px.jpg 3x"
 			                  alt="Homepage of interactive app to convert kelvin to fahrenheit and celsius">
-		<h2 class="proj-heading">TEMP<span class="title-highlight">CON</span>VERT</h2><h3 class="proj-highlight">Interactive App Built with React</h3> <p class="proj-text">TempConVert is a web app that allows the user to convert Kelvin to Celsius and Fahrenheit. This web app accepts input (K) and then posts a response based on the conversion to fahrenheit and celsius. The goal of this project was to transform this terminal based app into a web app using React.</p>
-		<form style="display: inline" action="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/tempconverter" method="get"><button class="button git-button" type="button">GitHub</button></form>
+		<h2 class="proj-heading">TEMP<span class="title-highlight">CON</span>VERT</h2><h3 class="proj-highlight">Interactive App Built with React 16</h3> <p class="proj-text">TempConVert is a web app that allows the user to convert Kelvin to Celsius and Fahrenheit. This web app accepts input (K) and then posts a response based on the conversion to Fahrenheit and Celsius. The goal of this project was to transform this console-based app into a web app using React.</p>
+		<form style="display: inline" action="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/tempconverter" method="get">
+			<button class="button git-button" type="button">GitHub</button>
+		</form>
 	</section>
 
 	<section class="proj-container project-4">
@@ -101,8 +98,10 @@
 			       				      ./static/img/projects/cap_stone_reactRavenous-1000px.jpg 2x,
 			                          ./static/img/projects/cap_stone_reactRavenous-1500px.jpg 3x"
 			                  alt="Homepage of Ravenous App">
-		<h2 class="proj-heading">Ravenous</h2><h3 class="proj-highlight">An Interactive App Built with React & the Yelp API</h3><p class="proj-text">An interactive app using the Yelp API to find places to eat.  User can input type of food and location for the search criteria then sort by Best Match, Highest Rated and Most Reviewed. Built using Stateful and Stateless components, passing props, mapping data and then rendering. <code class="code-highlight">Fetch()</code> for the API calls. </p>
-		<form style="display: inline" action="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/proRavenous-1/ravenous_1" method="get"><button class="button git-button" type="button">GitHub</button></form>
+		<h2 class="proj-heading">Ravenous</h2><h3 class="proj-highlight">An Interactive App Built with React 16 & the Yelp API</h3><p class="proj-text">An interactive app using the Yelp API to find places to eat.  User can input a type of food and location for the search criteria then sort by Best Match, Highest Rated and Most Reviewed. Built using Stateful and Stateless components, passing props, mapping data and then rendering. Use of <code class="code-highlight">Fetch()</code> for the API calls. </p>
+		<form style="display: inline" action="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/proRavenous-1/ravenous_1" method="get">
+			<button class="button git-button" type="button">GitHub</button>
+		</form>
 	</section>
 
 	<section class="proj-container project-5">
@@ -111,8 +110,10 @@
 			        				  ./static/img/projects/da_gun_deaths-1000px.jpg 2x,
 			                          ./static/img/projects/da_gun_deaths-1448px.png 3x"
 			                  alt="Summary of Gun Deaths in America">
-		<h2 class="proj-heading">Data Analysis</h2><h3 class="proj-highlight">Gun Deaths in the US: Exploring Data Using Python</h3><p class="proj-text">This project was done in Jupyter Notebook using a dataset from FiveThirtyEight (2012 to 2014) and data from the Census.  Used CSV and Datetime modules help sort the data. Explored the data by gender, by race, and amounts per month and year. </p>
-				<form style="display: inline" action="" method="get"><button class="button git-button" type="button">GitHub</button></form>
+		<h2 class="proj-heading">Data Analysis</h2><h3 class="proj-highlight">Gun Deaths in the US: Exploring Data Using Python</h3><p class="proj-text">This project was done in Jupyter Notebook using a dataset from FiveThirtyEight (2012 to 2014) and data from the Census.  Used CSV and Datetime modules to help sort the data. Explored the data by gender, race, and amount of deaths per month and year.</p>
+		<form style="display: inline" action="https://github.com/ryhanlon/Data_Analysis_Projects/tree/master" method="get">
+			<button class="button git-button" type="button">GitHub</button>
+		</form>
 	</section>
 
 	<!-- Blog content and links -->
@@ -122,8 +123,10 @@
 			                  alt="Logo">
 		<h2 class="blog-heading">Blog</h2>
 		<h3 class="blog-highlight">Code Challenge: Factorialize a Number</h3>
-		<p class="blog-text">Used a for loop with the range function <code class="code-highlight">range(start, stop[,step])</code> to generate a range of numbers, starting with 1 and ending with the argument + 1. The second parameter in range() is exclusionary, so <code class="code-highlight">num + 1</code> is used to include the argument. Then multiplied each number to the next number.</p>
-		<form style="display: inline" action="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/tempconverter" method="get"><button class="button git-button" type="button">More Posts</button></form>
+		<p class="blog-text">Used a 'for' loop with the range function <code class="code-highlight">range(start, stop[,step])</code> to generate a range of numbers, starting with 1 and ending with the argument + 1. The second parameter in range() is exclusionary, so <code class="code-highlight">num + 1</code> is used to include the argument. Then multiplied each number to the next number.</p>
+		<form style="display: inline" action="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/tempconverter" method="get">
+			<button class="button git-button" type="button">More Posts</button>
+		</form>
 	</section>
 
 	<!-- Content and links for the aside, iPad Pro and wider screens -->
@@ -133,12 +136,11 @@
 			<li class="topic-item"><a href="https://github.com/ryhanlon/Capstone_PDXCodeGuild" target="_blank">Django Project: Interactive Storybook</a></li>
 			<li class="topic-item"><a href="https://github.com/ryhanlon/Website-UIs/tree/master/capstone_wareHouse" target="_blank">UX Project: Warehouse Online Sales</a></li>
 			<li class="topic-item"><a href="#">Blog: Current Post</a></li>
-			<li class="topic-item"><a href="" target="_blank">Data Analysis: Gun Deaths in the US</a></li>
+			<li class="topic-item"><a href="https://github.com/ryhanlon/Data_Analysis_Projects/tree/master" target="_blank">Data Analysis: Gun Deaths in the US</a></li>
 			<li class="topic-item"><a href="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/tempconverter" target="_blank">React Project: TempConVert</a></li>
 			<li class="topic-item"><a href="https://github.com/ryhanlon/JavaScript-CodeAcademy/tree/master/proRavenous-1/ravenous_1" target="_blank">React Project: Ravenous Food App</a></li>
 		</ul>
 	</aside>
-
 </main>
 
 <footer class="footer">
