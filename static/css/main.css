@@ -6,7 +6,7 @@ font-family: 'Indie Flower', cursive;
 
 */
 
-
+/* NOTE to reviewer: received error messages from W#C CSS Validation, justify-self and justify-items don't exsist.  When I checked MDN, they do. */
 body,
 html {
     margin: 0;
@@ -24,7 +24,15 @@ video {
     max-width: 100%;
 }
 
- a {
+a {
+    grid-area: button;
+    text-decoration: none;
+    justify-self: center;
+    cursor: pointer;
+}
+
+
+form {
     grid-area: button;
     text-decoration: none;
     justify-self: center;
