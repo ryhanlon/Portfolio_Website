@@ -8,7 +8,7 @@
 
 This website is built to feature projects that I have developed over the past year.  It showcases each project with a brief introduction and a direct link to GitHub for further code details.
 
-Click [here](#pictures-of-desponsive-design-of-website) to see pictures of the website's Responsive Design.
+Click [here](#pictures-of-responsive-design-of-website) to see pictures of the website's Responsive Design.
 
 ##### Technical Components
 - CSS Grid, Flexbox and Media Queries are used to build the _responsive features_
